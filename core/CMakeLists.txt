@@ -137,7 +137,7 @@ else ()
 endif ()
 
 if (FMT_USE_SUBMODULE)
-    add_subdirectory(lib/fmt)
+    add_subdirectory(lib/fmt SYSTEM)
 else ()
     find_package(fmt REQUIRED)
 endif ()
